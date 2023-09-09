@@ -171,8 +171,8 @@ public class LoginService {
 	          BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(conn.getOutputStream()));
 	          StringBuilder sb = new StringBuilder();
 	          sb.append("grant_type=authorization_code");
-	          sb.append("&client_id=hnntl6BcuuFp5qf4vMAt"); // TODO Client ID 입력
-	          sb.append("&client_secret=S2tSUIOot4"); // TODO Client Secret 입력
+	          sb.append("&client_id=***Client ID***"); // TODO Client ID 입력
+	          sb.append("&client_secret=***Client Secret***"); // TODO Client Secret 입력
 	          sb.append("&code=" + Ncode);
 	          sb.append("&redirect_uri=http://localhost/login/naver"); // TODO 인가코드 받은 redirect_uri 입력
 	          bw.write(sb.toString());
